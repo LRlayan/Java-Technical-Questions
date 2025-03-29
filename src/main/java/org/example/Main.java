@@ -7,5 +7,6 @@ public class Main {
         Questions questions = new Questions();
 
         questions.Questions01();
+        questions.Questions02();
     }
 }
