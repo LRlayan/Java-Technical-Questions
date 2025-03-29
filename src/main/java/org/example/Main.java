@@ -8,5 +8,6 @@ public class Main {
 
         questions.Questions01();
         questions.Questions02();
+        questions.Questions03();
     }
 }

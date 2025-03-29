@@ -29,4 +29,14 @@ public class Questions {
         System.out.println(s1);
         System.out.println(s2);
     }
+
+    public void Questions03 () {
+        // Print 1 to 100 without using numbers.
+        String fixVal = "1";
+        String value = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+
+        for (int i = 0; i < value.length(); i++) {
+            System.out.println(i + fixVal.length());
+        }
+    }
 }
