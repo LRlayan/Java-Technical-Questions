@@ -1,9 +1,10 @@
 package org.example.questions;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Questions {
+
+    Scanner sc = new Scanner(System.in);
 
     public void Questions01 () {
         // Swap x,y values without using 3rd variable.
@@ -42,8 +43,6 @@ public class Questions {
     }
 
     public void Questions04 () {
-        Scanner sc = new Scanner(System.in);
-
         int val = 12;
         System.out.print("Enter the number : ");
         int inputNumber = sc.nextInt();
@@ -54,6 +53,20 @@ public class Questions {
     }
 
     public void Questions05 () {
+        int tax = 10;
+        int taxAmount = 0;
+        int finalSalary = 0;
 
+        System.out.print("Enter your salary : ");
+        int salary = sc.nextInt();
+        if (salary > 10000) {
+            taxAmount = salary*tax/100;
+            finalSalary = salary - taxAmount;
+        } else {
+            finalSalary = salary;
+        }
+        System.out.println("\nInput salary : " + salary);
+        System.out.println("Tax Amount : "+ taxAmount);
+        System.out.println("Final Salary : "+ finalSalary);
     }
 }

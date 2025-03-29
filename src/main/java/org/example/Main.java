@@ -10,5 +10,6 @@ public class Main {
         questions.Questions02();
         questions.Questions03();
         questions.Questions04();
+        questions.Questions05();
     }
 }
