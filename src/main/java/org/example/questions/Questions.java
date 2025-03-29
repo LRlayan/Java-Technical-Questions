@@ -53,20 +53,24 @@ public class Questions {
     }
 
     public void Questions05 () {
+        // Salary Calculate
+        // If the salary is more than 10000, deduct 10% of tax, else not deduct tax.
+
         int tax = 10;
-        int taxAmount = 0;
-        int finalSalary = 0;
+        double taxAmount = 0;
+        double finalSalary = 0;
 
         System.out.print("Enter your salary : ");
-        int salary = sc.nextInt();
+        double salary = sc.nextDouble();
+
+        System.out.println("\nInput salary : " + salary);
         if (salary > 10000) {
             taxAmount = salary*tax/100;
             finalSalary = salary - taxAmount;
+            System.out.println("Tax Amount : "+ taxAmount);
+            System.out.println("Final Salary : "+ finalSalary);
         } else {
-            finalSalary = salary;
+            System.out.println(salary+" amount is not tax dedicated.");
         }
-        System.out.println("\nInput salary : " + salary);
-        System.out.println("Tax Amount : "+ taxAmount);
-        System.out.println("Final Salary : "+ finalSalary);
     }
 }
