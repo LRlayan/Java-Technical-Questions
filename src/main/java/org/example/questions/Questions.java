@@ -1,6 +1,7 @@
 package org.example.questions;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Questions {
 
@@ -41,11 +42,18 @@ public class Questions {
     }
 
     public void Questions04 () {
+        Scanner sc = new Scanner(System.in);
+
         int val = 12;
-        int inputNumber = 3;
+        System.out.print("Enter the number : ");
+        int inputNumber = sc.nextInt();
 
         for (int i = 1; i <= val; i++) {
             System.out.println(inputNumber + " x " + i + " = " + inputNumber*i);
         }
+    }
+
+    public void Questions05 () {
+
     }
 }
