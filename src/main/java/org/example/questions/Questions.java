@@ -39,4 +39,13 @@ public class Questions {
             System.out.println(i + fixVal.length());
         }
     }
+
+    public void Questions04 () {
+        int val = 12;
+        int inputNumber = 3;
+
+        for (int i = 1; i <= val; i++) {
+            System.out.println(inputNumber + " x " + i + " = " + inputNumber*i);
+        }
+    }
 }
