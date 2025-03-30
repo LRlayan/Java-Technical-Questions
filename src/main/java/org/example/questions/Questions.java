@@ -119,4 +119,31 @@ public class Questions {
             System.out.println(simpleWord+" is Palindrome is false");
         }
     }
+
+    public void Questions08 () {
+        System.out.print("Enter the first word : ");
+        String text1 = sc.nextLine();
+        System.out.print("Enter the second word : ");
+        String text2 = sc.nextLine();
+
+        String toLower1 = text1.toLowerCase();
+        String toLower2 = text2.toLowerCase();
+
+        char[] array1 = toLower1.toCharArray();
+        char[] array2 = toLower2.toCharArray();
+
+        if (array1.length == array2.length) {
+            Arrays.sort(array1);
+            Arrays.sort(array2);
+
+            boolean isAnagram = Arrays.equals(array1,array2);
+            if (isAnagram) {
+                System.out.println(text1 + " & " + text2 + " are Anagram.");
+            } else {
+                System.out.println(text1 + " & " + text2 + " are not Anagram.");
+            }
+        } else {
+            System.out.println("Please input same character of words");
+        }
+    }
 }
