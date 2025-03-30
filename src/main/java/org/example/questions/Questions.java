@@ -96,4 +96,27 @@ public class Questions {
         }
         System.out.println(reverseArray);
     }
+
+    public void Questions07 () {
+        // Check if a string is a palindrome
+        // Palindrome words
+        // madam
+        // level
+        // racecar
+
+        String words = "level";
+
+        String simpleWord = words.toLowerCase();
+        String reverse = "";
+
+        for (int i = simpleWord.length() - 1; i >= 0; i--) {
+            reverse += simpleWord.charAt(i);
+        }
+
+        if (simpleWord.equals(reverse)) {
+            System.out.println(simpleWord+" is Palindrome is true");
+        } else {
+            System.out.println(simpleWord+" is Palindrome is false");
+        }
+    }
 }
