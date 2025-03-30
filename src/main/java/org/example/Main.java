@@ -14,6 +14,7 @@ public class Main {
 //        questions.Questions06();
 //        questions.Questions07();
 //        questions.Questions08();
-        questions.Questions09();
+//        questions.Questions09();
+        questions.Questions10();
     }
 }

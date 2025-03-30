@@ -162,4 +162,21 @@ public class Questions {
         System.out.println("Input Number : " + factorial);
         System.out.println("Factorial Number is : " + factorial);
     }
+
+    public void Questions10 () {
+        // Print the Fibonacci sequence
+
+        System.out.print("How many numbers do you want ? - ");
+        int count = sc.nextInt();
+        int first = 0;
+        int second = 1;
+
+        for (int i = 1; i <= count; i++) {
+            System.out.print(first + " ");
+
+            int next = first + second;
+            first = second;
+            second = next;
+        }
+    }
 }
