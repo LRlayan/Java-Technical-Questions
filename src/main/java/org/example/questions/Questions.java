@@ -121,6 +121,8 @@ public class Questions {
     }
 
     public void Questions08 () {
+        // Determine if two strings are anagrams
+
         System.out.print("Enter the first word : ");
         String text1 = sc.nextLine();
         System.out.print("Enter the second word : ");
@@ -145,5 +147,19 @@ public class Questions {
         } else {
             System.out.println("Please input same character of words");
         }
+    }
+
+    public void Questions09 () {
+        // Find the factorial of a number
+
+        System.out.print("Enter the number : ");
+        int number = sc.nextInt();
+        int factorial = 1;
+
+        for (int i = 1; i <= number; i++) {
+            factorial = factorial*i;
+        }
+        System.out.println("Input Number : " + factorial);
+        System.out.println("Factorial Number is : " + factorial);
     }
 }
