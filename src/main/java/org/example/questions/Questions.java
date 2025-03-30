@@ -1,5 +1,7 @@
 package org.example.questions;
 
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Questions {
@@ -43,6 +45,8 @@ public class Questions {
     }
 
     public void Questions04 () {
+        // Multiplication Table (1 to 12) of given number
+
         int val = 12;
         System.out.print("Enter the number : ");
         int inputNumber = sc.nextInt();
@@ -72,5 +76,24 @@ public class Questions {
         } else {
             System.out.println(salary+" amount is not tax dedicated.");
         }
+    }
+
+    public void Questions06 () {
+        // Reverse a string
+
+        String word = "Hello!";
+
+        // 1st method
+        // using String builder
+        System.out.println(new StringBuilder(word).reverse());
+
+        // 2nd method
+        char[] array = word.toCharArray();
+        char[] reverseArray = new char[array.length];
+
+        for (int i = array.length - 1, j = 0; i >= 0; i--,j++) {
+            reverseArray[j] = array[i];
+        }
+        System.out.println(reverseArray);
     }
 }
