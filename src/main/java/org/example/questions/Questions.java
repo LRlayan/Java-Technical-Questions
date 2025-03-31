@@ -186,6 +186,7 @@ public class Questions {
         LeftAlign(numberOfStars);
         RightAlign(numberOfStars);
         PyramidStarPattern(numberOfStars);
+        DiamondShapePattern(numberOfStars);
     }
 
     public void LeftAlign (int limit) {
@@ -225,6 +226,35 @@ public class Questions {
             }
             spaces--;
             System.out.println();
+        }
+    }
+
+    public void DiamondShapePattern (int rows) {
+        int space = rows - 1;
+
+        for (int j = 1; j <= rows; j++) {
+            for (int i = 1; i <= space; i++) {
+                System.out.print("  ");
+            }
+
+            for (int i = 1; i <= 2 * j - 1; i++) {
+                System.out.print("* ");
+            }
+            space--;
+            System.out.println("");
+        }
+
+        space = 1;
+
+        for (int j = 1; j <= rows - 1; j++) {
+            for (int i = 1; i <= space; i++) {
+                System.out.print("  ");
+            }
+            space++;
+            for (int i = 1; i <= 2 * (rows - j) - 1; i++) {
+                System.out.print("* ");
+            }
+            System.out.println("");
         }
     }
 }
