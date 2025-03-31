@@ -179,4 +179,52 @@ public class Questions {
             second = next;
         }
     }
+
+    public void Questions11 () {
+        int numberOfStars = 5;
+
+        LeftAlign(numberOfStars);
+        RightAlign(numberOfStars);
+        PyramidStarPattern(numberOfStars);
+    }
+
+    public void LeftAlign (int limit) {
+        for (int i = 0; i < limit; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void RightAlign (int rows) {
+        int spaces = rows;
+
+        for (int i = 0; i < rows; i++) {
+            for (int k = 1; k < spaces; k++) {
+                System.out.print("  ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            spaces--;
+            System.out.println();
+        }
+    }
+
+    public void PyramidStarPattern (int rows) {
+        int spaces = rows;
+
+        for (int i = 0; i < rows; i++) {
+            for (int k = 0; k < spaces; k++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            spaces--;
+            System.out.println();
+        }
+    }
 }
