@@ -1,12 +1,12 @@
 package org.example;
 
-import org.example.questions.Arrays;
+import org.example.questions.ArraysFundamental;
 import org.example.questions.Questions;
 
 public class Main {
     public static void main(String[] args) {
         Questions questions = new Questions();
-        Arrays arrays = new Arrays();
+        ArraysFundamental arrays = new ArraysFundamental();
 
 //        questions.Questions01();
 //        questions.Questions02();
@@ -20,6 +20,7 @@ public class Main {
 //        questions.Questions10();
 //        questions.Questions11();
 
-        arrays.FindDuplicateCount();
+//        arrays.FindDuplicateCount();
+        arrays.RemoveDuplicatesFromArray();
     }
 }
