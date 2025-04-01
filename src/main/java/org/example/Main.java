@@ -21,6 +21,7 @@ public class Main {
 //        questions.Questions11();
 
 //        arrays.FindDuplicateCount();
-        arrays.RemoveDuplicatesFromArray();
+//        arrays.RemoveDuplicatesFromArray();
+        arrays.ReverseArrays();
     }
 }

@@ -54,4 +54,17 @@ public class ArraysFundamental {
         System.out.println(Arrays.toString(uniAr));
         return Arrays.copyOf(uniAr, index);
     }
+
+    public void ReverseArrays() {
+        String[] arr = { "one", "two", "three", "four", "five" };
+
+        System.out.println("Before : " + Arrays.toString(arr));
+        for (int i = 0; i < arr.length / 2; i++) {
+            String temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+
+        System.out.println("After : " + Arrays.toString(arr));
+    }
 }
